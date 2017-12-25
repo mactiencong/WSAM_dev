@@ -1,0 +1,21 @@
+<html>
+         <head>
+            <title>WASM</title>
+          </head>
+          <body>
+            First number:
+            <input id="firstNumberInput" type="text" /><br/>
+            Second number:
+            <input id="secondNumberInput" type="text" /><br/>
+            <button onclick="addInt()">Result</button>
+            <script src="/utility.js"></script>
+            <script>
+            function addInt(){
+                let firstNumber = document.getElementById("firstNumberInput").value
+                let secondNumber = document.getElementById("secondNumberInput").value
+                let result = _addInt(firstNumber, secondNumber) // calc by WSAM
+                alert(result)
+            }
+            </script>
+          </body>
+    </html>
