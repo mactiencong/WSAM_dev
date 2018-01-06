@@ -8,18 +8,21 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                echo "test 2"
+                echo "test"
+                sh 'hostname'
                 input message: 'Continue'
             }
         }
         stage('Build') {
             steps {
                 echo "build"
+                sh 'hostname'
                 input message: 'Continue'
             }
         }
         stage('Release') {
             steps {
+                sh 'hostname'
                 input message: 'Continue'
             }
         }
