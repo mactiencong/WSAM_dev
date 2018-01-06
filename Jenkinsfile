@@ -9,11 +9,13 @@ pipeline {
         stage('Test') {
             steps {
                 echo "test"
+                input message: "Continue?"
             }
         }
         stage('Build') {
             steps {
                 echo "build"
+                input message: "Continue?"
             }
         }
         stage('Release') {
