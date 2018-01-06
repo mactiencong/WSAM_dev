@@ -9,18 +9,18 @@ pipeline {
         stage('Test') {
             steps {
                 echo "test"
-                input message: "Continue?"
+                input message: 'Continue'
             }
         }
         stage('Build') {
             steps {
                 echo "build"
-                input message: "Continue?"
+                input message: 'Continue'
             }
         }
         stage('Release') {
             steps {
-                echo "Release"
+                input message: 'Continue'
             }
         }
     }
