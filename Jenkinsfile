@@ -6,9 +6,9 @@ pipeline {
         }
     }
     stages {
-        stage('Test') {
+        stage('Test2') {
             steps {
-                echo "test"
+                echo "test2"
                 sh 'hostname'
                 input message: 'Continue'
             }
